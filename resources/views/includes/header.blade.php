@@ -7,13 +7,13 @@
             </div>
             <div class="nk-header-brand d-xl-none">
                 <a href="{{ route('home') }}" class="logo-link">
-                    <img class="logo-light logo-img" src="{{ asset('public/images/logo_@1x.png') }}"
-                        srcset="{{ asset('public/images/logo_@2x.png 2x') }}" alt="logo">
-                    <img class="logo-dark logo-img" src="{{ asset('public/images/logo_name_@1x.png') }}"
-                        srcset="{{ asset('public/images/logo_name_@2x.png 2x') }}" alt="logo-dark">
+                    <img class="logo-light logo-img" src="{{ asset('/images/logo_@1x.png') }}"
+                        srcset="{{ asset('/images/logo_@2x.png 2x') }}" alt="logo">
+                    <img class="logo-dark logo-img" src="{{ asset('/images/logo_name_@1x.png') }}"
+                        srcset="{{ asset('/images/logo_name_@2x.png 2x') }}" alt="logo-dark">
                 </a>
             </div>
-            <div class="nk-header-search ml-3 ml-xl-0">                
+            <div class="nk-header-search ml-3 ml-xl-0">
                 <em class="icon ni ni-search"></em>
                 <input type="text" class="form-control border-transparent form-focus-none"
                     placeholder="Search anything">

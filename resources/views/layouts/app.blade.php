@@ -5,18 +5,17 @@
     <meta charset="utf-8">
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-        content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="{{ asset('public/images/logo_@3x.png') }}">
+    <link rel="shortcut icon" href="{{ asset('/images/logo_@3x.png') }}">
     <!-- Page Title  -->
     <title>AntonX Dashboard | AntonX Private Limited</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="{{ asset('public/assets/css/dashlite.css?ver=2.2.0') }}">
-    <link id="skin-default" rel="stylesheet" href="{{ asset('public/assets/css/theme.css?ver=2.2.0') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/dashlite.css?ver=2.2.0') }}">
+    <link id="skin-default" rel="stylesheet" href="{{ asset('/assets/css/theme.css?ver=2.2.0') }}">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -76,18 +75,18 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
-    <script src="{{ asset('public/assets/js/bundle.js?ver=2.2.0') }}"></script>
-    <script src="{{ asset('public/assets/js/scripts.js?ver=2.2.0') }}"></script>
-    <script src="{{ asset('public/assets/js/example-chart.js?ver=2.2.0') }}"></script>
-    <script src="{{ asset('public/assets/js/charts/chart-ecommerce.js?ver=2.2.0') }}"></script>
-    {{-- <script src="{{ asset('public/assets/bundles/select2/dist/js/select2.full.min.js') }}"></script> --}}
+    <script src="{{ asset('/assets/js/bundle.js?ver=2.2.0') }}"></script>
+    <script src="{{ asset('/assets/js/scripts.js?ver=2.2.0') }}"></script>
+    <script src="{{ asset('/assets/js/example-chart.js?ver=2.2.0') }}"></script>
+    <script src="{{ asset('/assets/js/charts/chart-ecommerce.js?ver=2.2.0') }}"></script>
+    {{-- <script src="{{ asset('/assets/bundles/select2/dist/js/select2.full.min.js') }}"></script> --}}
 
     <!-- Custom JS File -->
-    <script src="{{ asset('public/assets/js/ajax.js') }}"></script>
-    <script src="{{ asset('public/assets/bundles/sweetalert/sweetalert.min.js') }}"></script>
-    {{-- <script src="{{ asset('public/assets/bundles/jquery-ui/jquery-ui.min.js') }}" defer></script> --}}
+    <script src="{{ asset('/assets/js/ajax.js') }}"></script>
+    <script src="{{ asset('/assets/bundles/sweetalert/sweetalert.min.js') }}"></script>
+    {{-- <script src="{{ asset('/assets/bundles/jquery-ui/jquery-ui.min.js') }}" defer></script> --}}
     <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
     @yield('footer_scripts')
 
 </body>

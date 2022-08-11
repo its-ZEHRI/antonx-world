@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="{{ asset('public/images/logo_@3x.png') }}">
+    <link rel="shortcut icon" href="{{ asset('/images/logo_@3x.png') }}">
     <!-- Page Title  -->
     <title>AntonX Leaderboard | AntonX Private Limited</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="{{ asset('public/assets/css/dashlite.css?ver=2.2.0') }}">
-    <link id="skin-default" rel="stylesheet" href="{{ asset('public/assets/css/theme.css?ver=2.2.0') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/dashlite.css?ver=2.2.0') }}">
+    <link id="skin-default" rel="stylesheet" href="{{ asset('/assets/css/theme.css?ver=2.2.0') }}">
 
     <!-- Style for custome scroll bar -->
     <style>
@@ -69,11 +69,11 @@
                         <div class="nk-header-wrap" style="margin-left: -10px">
                             <div class="nk-header-brand">
                                 <a href="{{ route('home') }}" class="logo-link">
-                                    <img class="logo-light logo-img" src="{{ asset('public/images/logo_@3x.png') }}"
-                                        srcset="{{ asset('public/images/logo_@3x.png') }}" alt="logo"
+                                    <img class="logo-light logo-img" src="{{ asset('/images/logo_@3x.png') }}"
+                                        srcset="{{ asset('/images/logo_@3x.png') }}" alt="logo"
                                         width="200">
-                                    <img class="logo-dark logo-img" src="{{ asset('public/images/logo_name_@3x.png') }}"
-                                        srcset="{{ asset('public/images/logo_name_@3x.png') }}" alt="logo-dark"
+                                    <img class="logo-dark logo-img" src="{{ asset('/images/logo_name_@3x.png') }}"
+                                        srcset="{{ asset('/images/logo_name_@3x.png') }}" alt="logo-dark"
                                         width="">
                                 </a>
                             </div><!-- .nk-header-brand -->
@@ -224,7 +224,7 @@
                                                                 class="col-4 col-lg-3 align-center justify-end text-black-500">
                                                                 <span class="text-right">
                                                                     <img class="mb-1"
-                                                                        src="{{ asset('public/images/icons/hourglass.svg') }}"
+                                                                        src="{{ asset('/images/icons/hourglass.svg') }}"
                                                                         alt="">
                                                                     <span style="padding: 0 1px">
                                                                         {{ seconds_to_hours($user->seconds) }}</span>
@@ -266,19 +266,19 @@
                                                                             class="d-flex justify-end align-end w-100 h-100">
                                                                             <div class="position-relative"
                                                                                 style="width: 250px;height: 250px;">
-                                                                                <img src="{{ asset('public/images/rectangles/f2.svg') }}"
+                                                                                <img src="{{ asset('/images/rectangles/f2.svg') }}"
                                                                                     width="25" alt="@"
                                                                                     style="position:absolute;bottom: 30%;left: 12%;">
-                                                                                <img src="{{ asset('public/images/rectangles/f1.svg') }}"
+                                                                                <img src="{{ asset('/images/rectangles/f1.svg') }}"
                                                                                     width="20" alt="@"
                                                                                     style="position: absolute;bottom: 32%;right: 3%;">
-                                                                                <img src="{{ asset('public/images/rectangles/f3.svg') }}"
+                                                                                <img src="{{ asset('/images/rectangles/f3.svg') }}"
                                                                                     width="25" alt="@"
                                                                                     style="position: absolute;top: 8%;left: 25%;">
-                                                                                <img src="{{ asset('public/images/rectangles/f4.svg') }}"
+                                                                                <img src="{{ asset('/images/rectangles/f4.svg') }}"
                                                                                     width="25" alt="@"
                                                                                     style="position: absolute;top: 35%;right: 10%;">
-                                                                                <img src="{{ asset('public/images/rectangles/f4.svg') }}"
+                                                                                <img src="{{ asset('/images/rectangles/f4.svg') }}"
                                                                                     width="20" alt="@"
                                                                                     style="position: absolute;top: 5%;right: 25%;">
                                                                                 <img src="{{ asset($f_user->user->image_url) }}"
@@ -372,19 +372,19 @@
         <!-- main @e -->
     </div>
     <!-- app-root @e -->
-    <script src="{{ asset('public/assets/js/bundle.js?ver=2.2.0') }}"></script>
-    <script src="{{ asset('public/assets/js/scripts.js?ver=2.2.0') }}"></script>
+    <script src="{{ asset('/assets/js/bundle.js?ver=2.2.0') }}"></script>
+    <script src="{{ asset('/assets/js/scripts.js?ver=2.2.0') }}"></script>
 
-    {{-- <script src="{{ asset('public/assets/bundles/select2/dist/js/select2.full.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('public/assets/js/charts/chart-ecommerce.js?ver=2.2.0') }}"></script> --}}
+    {{-- <script src="{{ asset('/assets/bundles/select2/dist/js/select2.full.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/assets/js/charts/chart-ecommerce.js?ver=2.2.0') }}"></script> --}}
 
     <!-- Custom JS File -->
-    <script src="{{ asset('public/assets/js/ajax.js') }}"></script>
-    {{-- <script src="{{ asset('public/assets/bundles/jquery-ui/jquery-ui.min.js') }}" defer></script> --}}
-    <script src="{{ asset('public/assets/bundles/sweetalert/sweetalert.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/ajax.js') }}"></script>
+    {{-- <script src="{{ asset('/assets/bundles/jquery-ui/jquery-ui.min.js') }}" defer></script> --}}
+    <script src="{{ asset('/assets/bundles/sweetalert/sweetalert.min.js') }}"></script>
 
     <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
 
     <script>
         // refersh this page after every 30 minutes

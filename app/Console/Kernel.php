@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
         Commands\UpdateStreak::class,
         Commands\TennisStreak::class,
         Commands\UserAttendance::class,
+        Commands\Testt::class,
     ];
     /**
      * Define the application's command schedule.
@@ -26,10 +27,11 @@ class Kernel extends ConsoleKernel
         $schedule->command('QrcodeAccessTokenChange:update')->everyThirtyMinutes();
         $schedule->command('TennisStreak:update')->dailyAt('00:00');
         $schedule->command('StreakUpdate:update')->dailyAt('00:00');
-        $schedule->command('UserCheckinUpdate:Update')->dailyAt('00:00');
+        $schedule->command('UserCheckinUpdate:Update')->dailyAt('17:00');
         // $schedule->command('UserAttendance:update')->dailyAt('00:00');
         $schedule->command('UserAttendance:update')->everyMinute();
         // $schedule->command('UserCheckinUpdate:Update')->everyMinute();
+        $schedule->command('command:test')->everyMinute();
     }
 
     /**

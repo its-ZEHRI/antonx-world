@@ -2,12 +2,12 @@
     <div class="nk-sidebar-element nk-sidebar-head">
         <div class="nk-sidebar-brand">
             <a href="{{ route('home') }}" class="logo-link nk-sidebar-logo">
-                <img class="logo-light logo-img" src="{{ asset('public/images/logo_name_@1x.png') }}"
-                    srcset="{{ asset('public/images/logo_name_@2x.png 2x') }}" alt="logo">
-                <img class="logo-dark logo-img" src="{{ asset('public/images/logo_name_@2x.png') }}"
-                    srcset="{{ asset('public/images/logo_name_@3x.png 2x') }}" alt="logo-dark">
-                <img class="logo-small logo-img logo-img-small" src="{{ asset('public/images/logo_@1x.png') }}"
-                    srcset="{{ asset('public/images/logo_@2x.png 2x') }}" alt="logo-small">
+                <img class="logo-light logo-img" src="{{ asset('/images/logo_name_@1x.png') }}"
+                    srcset="{{ asset('/images/logo_name_@2x.png 2x') }}" alt="logo">
+                <img class="logo-dark logo-img" src="{{ asset('/images/logo_name_@2x.png') }}"
+                    srcset="{{ asset('/images/logo_name_@3x.png 2x') }}" alt="logo-dark">
+                <img class="logo-small logo-img logo-img-small" src="{{ asset('/images/logo_@1x.png') }}"
+                    srcset="{{ asset('/images/logo_@2x.png 2x') }}" alt="logo-small">
             </a>
         </div>
         <div class="nk-menu-trigger mr-n2">
