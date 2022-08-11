@@ -29,9 +29,11 @@ class AttendanceController extends Controller
             $check = Attendance::whereDate('date', get_date())->where('user_id', $user->id)
                 ->whereNotNull('check_in_time')->get();
 
+            // return response()->json(['data'=> $check]);
+
             if (count($check) > 0) {
                 return response()->json([
-                    'success' => false, 'error' => 'You already checked-in for today!'
+                    'success' => false, 'error' => 'You already checked-in for todayyyy!'
                 ], 401);
             }
 

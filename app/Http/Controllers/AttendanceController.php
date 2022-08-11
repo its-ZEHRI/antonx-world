@@ -18,6 +18,9 @@ class AttendanceController extends Controller
         $data['page_title'] = "AntonX User Attendance List";
         $data['attendance'] = Attendance::orderBy('id', 'DESC')->with('user')->get();
 
+        // $index =  Attendance::orderBy('id', 'DESC')->with('user')->get();
+        // dd($index->toArray());
+
 
         $users = User::whereNot('id', 1)->where('job_type', '!=', 'Remote')
             ->select('id')->get();
@@ -55,7 +58,7 @@ class AttendanceController extends Controller
             'user_id' => 'required',
             'check_in_time' => 'required',
         ]);
-        // this function has been define in App/my_helper.php library it show the difference btw two times 
+        // this function has been define in App/my_helper.php library it show the difference btw two times
         $total_time = difference_bwt_two_times($request->check_in_time, $request->check_out_time);
         if ($validator->passes()) {
             $data = [
@@ -149,7 +152,7 @@ class AttendanceController extends Controller
                 ->where('user_id', $user->id)->whereDate('date', '=', get_date())->get();
             if(count($attend) >0 ){
 
-            
+
             $check_in_time = $attend->first()->check_in_time;
             $check_out_time = get_time();
             $total_today_hours = difference_bwt_two_times($check_in_time, $check_out_time);
@@ -162,7 +165,7 @@ class AttendanceController extends Controller
 
             Attendance::where('id', $attend->first()->id)
                 ->where('date', $attend->first()->date)->update($data);
-            
+
             return response()->json([
                 'success' => 'You have checked-Out Successfully', 'error' => null
             ], 200);

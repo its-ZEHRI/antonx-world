@@ -82,12 +82,12 @@
                                                 <span>{{ date_with_slash($attend->date) }}</span>
                                             </td>
                                             <td class="nk-tb-col">
-                                                @if (empty($attend->check_out_time))
-                                                    <span class="badge badge-danger"> {{ 'absent' }}</span>
-                                                @else
+                                                {{-- @if (empty($attend->check_out_time)) --}}
+                                                    {{-- <span class="badge badge-danger"> {{ 'absent' }}</span> --}}
+                                                {{-- @else --}}
                                                     <span
                                                         class="tb-lead">{{ show_AM_PM_time($attend->check_in_time) }}</span>
-                                                @endif
+                                                {{-- @endif --}}
                                             </td>
                                             <td class="nk-tb-col">
                                                 @if (empty($attend->check_out_time))
